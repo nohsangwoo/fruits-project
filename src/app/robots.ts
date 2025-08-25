@@ -7,6 +7,18 @@ export default function robots(): MetadataRoute.Robots {
         userAgent: '*',
         allow: '/',
         disallow: ['/api/', '/admin/', '/_next/', '/.next/'],
+        crawlDelay: 1,
+      },
+      {
+        userAgent: 'Yeti',
+        allow: '/',
+        disallow: ['/api/', '/admin/', '/_next/', '/.next/'],
+        crawlDelay: 1,
+      },
+      {
+        userAgent: 'Googlebot',
+        allow: '/',
+        disallow: ['/api/', '/admin/', '/_next/', '/.next/'],
       },
       {
         userAgent: 'Googlebot-Image',

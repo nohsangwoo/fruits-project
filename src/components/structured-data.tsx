@@ -5,7 +5,7 @@ export function StructuredData() {
     "name": "럿지네 과일 장수",
     "alternateName": "Rutjine Fruits",
     "url": "https://www.junilgong.com",
-    "description": "농장에서 직접 가져온 신선한 과일을 당일 배송으로 제공하는 프리미엄 과일 전문점입니다.",
+    "description": "전국 50+ 농장 직계약으로 신선한 과일을 당일 배송! 딸기, 사과, 수박 등 프리미엄 과일을 합리적 가격에 만나보세요.",
     "potentialAction": {
       "@type": "SearchAction",
       "target": {
@@ -23,7 +23,7 @@ export function StructuredData() {
     "url": "https://www.junilgong.com",
     "logo": "https://www.junilgong.com/logo.png",
     "image": "https://www.junilgong.com/hero-background.jpeg",
-    "description": "2015년부터 시작된 럿지네 과일 장수는 전국 50+ 농장과 직접 계약하여 당일 배송으로 신선한 과일을 제공합니다.",
+    "description": "전국 50+ 농장 직계약으로 신선한 과일을 당일 배송! 딸기, 사과, 수박 등 프리미엄 과일을 합리적 가격에 만나보세요.",
     "foundingDate": "2015",
     "address": {
       "@type": "PostalAddress",
