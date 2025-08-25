@@ -90,8 +90,8 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative py-24 px-4 bg-cover bg-center bg-no-repeat" style={{backgroundImage: 'url("https://images.unsplash.com/photo-1610832958506-aa56368176cf?w=1200&h=600&fit=crop&crop=center")'}}>
-        <div className="absolute inset-0 bg-white/80 dark:bg-gray-900/80"></div>
+      <section className="relative py-24 px-4 bg-cover bg-center bg-no-repeat" style={{backgroundImage: 'url("/hero-background.jpeg")'}}>
+        <div className="absolute inset-0 bg-white/70 dark:bg-gray-900/80"></div>
         <div className="relative container mx-auto max-w-4xl text-center">
           <span className="inline-block px-4 py-2 mb-6 text-sm bg-green-100 text-green-800 rounded-full">
             신선한 과일 직배송
@@ -189,6 +189,192 @@ export default function Home() {
             <CarouselPrevious className="left-4" />
             <CarouselNext className="right-4" />
           </Carousel>
+        </div>
+      </section>
+
+      {/* About Us */}
+      <section className="py-16 px-4 bg-white dark:bg-gray-900">
+        <div className="container mx-auto">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl font-bold mb-6 text-gray-900 dark:text-white">럿지네 과일 장수 이야기</h2>
+            <p className="text-lg text-gray-600 dark:text-gray-400 mb-8 leading-relaxed">
+              2015년부터 시작된 럿지네 과일 장수는 고객에게 가장 신선하고 맛있는 과일을 제공하는 것을 목표로 합니다. 
+              전국의 우수한 농장과 직접 계약을 맺어 중간 유통 과정을 생략하고, 
+              농장에서 바로 고객의 식탁까지 신선함을 전달합니다.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+              <div className="text-center">
+                <div className="text-3xl font-bold text-green-600 mb-2">50+</div>
+                <p className="text-gray-600 dark:text-gray-400">협력 농장</p>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-green-600 mb-2">10,000+</div>
+                <p className="text-gray-600 dark:text-gray-400">만족한 고객</p>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-green-600 mb-2">9년</div>
+                <p className="text-gray-600 dark:text-gray-400">신뢰의 경험</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* How It Works */}
+      <section className="py-16 px-4 bg-gray-50 dark:bg-gray-800">
+        <div className="container mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold mb-4 text-gray-900 dark:text-white">주문 과정</h2>
+            <p className="text-gray-600 dark:text-gray-400">간단한 3단계로 신선한 과일을 받아보세요</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <div className="w-16 h-16 bg-green-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+                1
+              </div>
+              <h3 className="text-xl font-semibold mb-3 text-gray-900 dark:text-white">상품 선택</h3>
+              <p className="text-gray-600 dark:text-gray-400">
+                원하시는 과일을 선택하고 수량을 정해주세요. 다양한 과일을 한 번에 주문할 수 있습니다.
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-green-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+                2
+              </div>
+              <h3 className="text-xl font-semibold mb-3 text-gray-900 dark:text-white">주문 확인</h3>
+              <p className="text-gray-600 dark:text-gray-400">
+                주문 정보를 확인하고 결제를 진행해주세요. 안전한 결제 시스템으로 보호받습니다.
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-green-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+                3
+              </div>
+              <h3 className="text-xl font-semibold mb-3 text-gray-900 dark:text-white">신선 배송</h3>
+              <p className="text-gray-600 dark:text-gray-400">
+                당일 또는 다음날 신선한 과일을 문앞까지 안전하게 배송해드립니다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Us */}
+      <section className="py-16 px-4 bg-white dark:bg-gray-900">
+        <div className="container mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold mb-4 text-gray-900 dark:text-white">럿지네를 선택하는 이유</h2>
+            <p className="text-gray-600 dark:text-gray-400">고객들이 럿지네를 계속 찾는 특별한 이유들</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="text-center p-6">
+              <div className="w-20 h-20 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl">🌱</span>
+              </div>
+              <h3 className="text-lg font-semibold mb-2 text-gray-900 dark:text-white">농장 직송</h3>
+              <p className="text-gray-600 dark:text-gray-400 text-sm">
+                중간 유통업체 없이 농장에서 직접 배송하여 더 신선하고 저렴하게
+              </p>
+            </div>
+            <div className="text-center p-6">
+              <div className="w-20 h-20 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl">❄️</span>
+              </div>
+              <h3 className="text-lg font-semibold mb-2 text-gray-900 dark:text-white">콜드체인</h3>
+              <p className="text-gray-600 dark:text-gray-400 text-sm">
+                수확부터 배송까지 온도 관리를 통해 최상의 신선도 유지
+              </p>
+            </div>
+            <div className="text-center p-6">
+              <div className="w-20 h-20 bg-yellow-100 dark:bg-yellow-900 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl">🏆</span>
+              </div>
+              <h3 className="text-lg font-semibold mb-2 text-gray-900 dark:text-white">엄선된 품질</h3>
+              <p className="text-gray-600 dark:text-gray-400 text-sm">
+                전문가가 직접 선별한 최고 등급의 과일만을 고객에게 제공
+              </p>
+            </div>
+            <div className="text-center p-6">
+              <div className="w-20 h-20 bg-purple-100 dark:bg-purple-900 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl">💝</span>
+              </div>
+              <h3 className="text-lg font-semibold mb-2 text-gray-900 dark:text-white">정성 포장</h3>
+              <p className="text-gray-600 dark:text-gray-400 text-sm">
+                하나하나 정성스럽게 포장하여 선물용으로도 완벽
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-16 px-4 bg-gray-50 dark:bg-gray-800">
+        <div className="container mx-auto max-w-4xl">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold mb-4 text-gray-900 dark:text-white">자주 묻는 질문</h2>
+            <p className="text-gray-600 dark:text-gray-400">고객들이 가장 궁금해하는 질문들을 모았습니다</p>
+          </div>
+          <div className="space-y-6">
+            <div className="bg-white dark:bg-gray-700 rounded-lg p-6">
+              <h3 className="text-lg font-semibold mb-2 text-gray-900 dark:text-white">
+                Q. 배송은 얼마나 걸리나요?
+              </h3>
+              <p className="text-gray-600 dark:text-gray-400">
+                A. 오전 11시 이전 주문시 당일 배송, 그 이후는 다음날 배송됩니다. 
+                주말 및 공휴일은 배송이 불가하며, 제주도 및 도서지역은 추가 1-2일이 소요됩니다.
+              </p>
+            </div>
+            <div className="bg-white dark:bg-gray-700 rounded-lg p-6">
+              <h3 className="text-lg font-semibold mb-2 text-gray-900 dark:text-white">
+                Q. 불만족시 교환이나 환불이 가능한가요?
+              </h3>
+              <p className="text-gray-600 dark:text-gray-400">
+                A. 네, 상품 수령 후 24시간 이내에 연락주시면 100% 교환 또는 환불 처리해드립니다. 
+                고객 만족이 저희의 최우선 목표입니다.
+              </p>
+            </div>
+            <div className="bg-white dark:bg-gray-700 rounded-lg p-6">
+              <h3 className="text-lg font-semibold mb-2 text-gray-900 dark:text-white">
+                Q. 선물 포장이 가능한가요?
+              </h3>
+              <p className="text-gray-600 dark:text-gray-400">
+                A. 네, 무료로 선물 포장 서비스를 제공합니다. 
+                주문시 선물 포장 옵션을 선택하시고 메시지를 남겨주시면 정성스럽게 포장해드립니다.
+              </p>
+            </div>
+            <div className="bg-white dark:bg-gray-700 rounded-lg p-6">
+              <h3 className="text-lg font-semibold mb-2 text-gray-900 dark:text-white">
+                Q. 최소 주문 금액이 있나요?
+              </h3>
+              <p className="text-gray-600 dark:text-gray-400">
+                A. 무료 배송을 위한 최소 주문 금액은 30,000원입니다. 
+                30,000원 미만 주문시에는 배송비 3,000원이 추가됩니다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Newsletter */}
+      <section className="py-16 px-4 bg-green-600 text-white">
+        <div className="container mx-auto text-center max-w-2xl">
+          <h2 className="text-3xl font-bold mb-4">특별 할인 소식 받기</h2>
+          <p className="text-green-100 mb-8">
+            신상품 출시, 특가 할인, 계절 과일 정보를 가장 먼저 받아보세요
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+            <input
+              type="email"
+              placeholder="이메일 주소를 입력하세요"
+              className="flex-1 px-4 py-3 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-green-300"
+            />
+            <Button className="bg-white text-green-600 hover:bg-gray-100 px-6 py-3">
+              구독하기
+            </Button>
+          </div>
+          <p className="text-sm text-green-200 mt-4">
+            언제든지 구독을 취소할 수 있으며, 개인정보는 안전하게 보호됩니다.
+          </p>
         </div>
       </section>
 
