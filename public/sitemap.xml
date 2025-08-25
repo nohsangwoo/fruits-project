@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://www.junilgong.com/</loc>
+    <lastmod>2024-01-20T10:00:00+09:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.junilgong.com/hero-background.jpeg</image:loc>
+      <image:title>럿지네 과일 장수 - 신선한 과일들</image:title>
+      <image:caption>농장에서 직접 가져온 신선한 과일을 바구니에 담은 모습</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.junilgong.com/fruits</loc>
+    <lastmod>2024-01-20T09:00:00+09:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.junilgong.com/about</loc>
+    <lastmod>2024-01-20T09:00:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.junilgong.com/contact</loc>
+    <lastmod>2024-01-20T09:00:00+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+</urlset>

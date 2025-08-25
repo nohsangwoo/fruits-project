@@ -75,9 +75,9 @@ export default function Home() {
       <header className="sticky top-0 z-50 backdrop-blur-md bg-white/95 dark:bg-gray-900/95 border-b border-gray-200 dark:border-gray-700">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center space-x-3">
-            <h1 className="text-2xl font-bold text-gray-900 dark:text-white">
+            <div className="text-2xl font-bold text-gray-900 dark:text-white">
               럿지네 과일 장수
-            </h1>
+            </div>
             <span className="text-sm text-gray-500 dark:text-gray-400">신선한 과일 전문점</span>
           </div>
           <div className="flex items-center space-x-4">
@@ -96,11 +96,11 @@ export default function Home() {
           <span className="inline-block px-4 py-2 mb-6 text-sm bg-green-100 text-green-800 rounded-full">
             신선한 과일 직배송
           </span>
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900 dark:text-white">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900 dark:text-white">
             매일 신선한 과일을
             <br />
             문앞까지 배달해드립니다
-          </h2>
+          </h1>
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
             엄선된 농장에서 직접 가져온 신선한 과일을 합리적인 가격에 만나보세요.
           </p>
@@ -153,10 +153,12 @@ export default function Home() {
                     <div className="relative">
                       <Image
                         src={fruit.image}
-                        alt={fruit.name}
+                        alt={`${fruit.name} - 럿지네 과일 장수의 신선한 ${fruit.name} 상품 이미지`}
                         width={400}
                         height={300}
                         className="w-full h-48 object-cover"
+                        loading="lazy"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       />
                       {fruit.badge === "베스트" && (
                         <span className="absolute top-3 left-3 bg-green-600 text-white text-xs px-2 py-1 rounded">
